@@ -1,0 +1,88 @@
+criteo数据集
+python affm_lgbEncoder_tuning.py --use_cross_entropy True --use_pos_ratio True
+--attention_size_list [4] --embedding_size_list [4] --dropout_fm_0_list [0.1,0.3,0.5,0.7,0.9] --dropout_fm_1_list [0.3]
+
+dropout_1=0.1
+WARNING:root:训练集logloss: 0.45144089
+WARNING:root:训练集auc: 0.79342698
+WARNING:root:验证集logloss: 0.46918790
+WARNING:root:验证集auc: 0.74827288
+WARNING:root:测试集logloss: 0.47990304
+WARNING:root:测试集auc: 0.75019412
+
+dropout_1=0.3
+WARNING:root:训练集logloss: 0.45710156
+WARNING:root:训练集auc: 0.78403709
+WARNING:root:验证集logloss: 0.46878567
+WARNING:root:验证集auc: 0.75144674
+WARNING:root:测试集logloss: 0.47914524
+WARNING:root:测试集auc: 0.75407946
+
+dropout_1=0.5
+WARNING:root:训练集logloss: 0.43211987
+WARNING:root:训练集auc: 0.79546638
+WARNING:root:验证集logloss: 0.45540019
+WARNING:root:验证集auc: 0.75524436
+WARNING:root:测试集logloss: 0.46586333
+WARNING:root:测试集auc: 0.75614338
+
+dropout_1=0.7
+WARNING:root:训练集logloss: 0.42449956
+WARNING:root:训练集auc: 0.80201187
+WARNING:root:验证集logloss: 0.45610110
+WARNING:root:验证集auc: 0.75421543
+WARNING:root:测试集logloss: 0.46733858
+WARNING:root:测试集auc: 0.75368287
+
+dropout_1=0.9
+WARNING:root:训练集logloss: 0.42665405
+WARNING:root:训练集auc: 0.79848552
+WARNING:root:验证集logloss: 0.45777893
+WARNING:root:验证集auc: 0.75246225
+WARNING:root:测试集logloss: 0.46793087
+WARNING:root:测试集auc: 0.75334768
+
+##########################################################################
+avazu数据集
+python affm_lgbEncoder_tuning.py --use_cross_entropy True --use_pos_ratio True
+--attention_size_list [2] --embedding_size_list [2] --dropout_fm_0_list [0.1,0.3,0.5,0.7,0.9] --dropout_fm_1_list [0.3]
+
+dropout_1=0.1
+WARNING:root:训练集logloss: 0.44947536
+WARNING:root:训练集auc: 0.78552104
+WARNING:root:验证集logloss: 0.45645044
+WARNING:root:验证集auc: 0.76061447
+WARNING:root:测试集logloss: 0.45851378
+WARNING:root:测试集auc: 0.76488331
+
+dropout_1=0.3
+WARNING:root:训练集logloss: 0.38604120
+WARNING:root:训练集auc: 0.78987446
+WARNING:root:验证集logloss: 0.40009094
+WARNING:root:验证集auc: 0.76158861
+WARNING:root:测试集logloss: 0.40043207
+WARNING:root:测试集auc: 0.76530343
+
+dropout_1=0.5
+WARNING:root:训练集logloss: 0.38320805
+WARNING:root:训练集auc: 0.78983447
+WARNING:root:验证集logloss: 0.39872096
+WARNING:root:验证集auc: 0.76136583
+WARNING:root:测试集logloss: 0.39873953
+WARNING:root:测试集auc: 0.76531039
+
+dropout_1=0.7
+WARNING:root:训练集logloss: 0.37903451
+WARNING:root:训练集auc: 0.79453445
+WARNING:root:验证集logloss: 0.39903790
+WARNING:root:验证集auc: 0.75972679
+WARNING:root:测试集logloss: 0.39893321
+WARNING:root:测试集auc: 0.76324534
+
+dropout_1=0.9
+WARNING:root:训练集logloss: 0.37569467
+WARNING:root:训练集auc: 0.79850617
+WARNING:root:验证集logloss: 0.39999763
+WARNING:root:验证集auc: 0.75720227
+WARNING:root:测试集logloss: 0.39976130
+WARNING:root:测试集auc: 0.76048314

@@ -1,0 +1,149 @@
+WARNING:root:FFM
+WARNING:root:调参
+WARNING:root:调attention_size
+WARNING:root:embedding_size: 4
+WARNING:root:dropout_fm:[0.3, 0.3]
+2019-03-11 22:44:38.206636: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:root:#params: 35546
+WARNING:root:[1] train-auc=0.7578, valid-auc=0.7279 [2.9 s]
+WARNING:root:[2] train-auc=0.7905, valid-auc=0.7523 [2.5 s]
+WARNING:root:[3] train-auc=0.7999, valid-auc=0.7540 [2.4 s]
+WARNING:root:[4] train-auc=0.8059, valid-auc=0.7534 [2.5 s]
+WARNING:root:[5] train-auc=0.8102, valid-auc=0.7523 [2.5 s]
+WARNING:root:[6] train-auc=0.8136, valid-auc=0.7511 [2.4 s]
+WARNING:root:[7] train-auc=0.8167, valid-auc=0.7500 [2.4 s]
+WARNING:root:训练集logloss: 0.42642580
+WARNING:root:训练集auc: 0.79994734
+WARNING:root:验证集logloss: 0.45868904
+WARNING:root:验证集auc: 0.75402729
+WARNING:root:测试集logloss: 0.46967970
+WARNING:root:测试集auc: 0.75279627
+WARNING:root:embedding_size: 4
+WARNING:root:dropout_fm:[0.3, 0.5]
+WARNING:root:#params: 35546
+WARNING:root:[1] train-auc=0.7701, valid-auc=0.7387 [2.8 s]
+WARNING:root:[2] train-auc=0.7948, valid-auc=0.7530 [2.5 s]
+WARNING:root:[3] train-auc=0.8039, valid-auc=0.7531 [2.5 s]
+WARNING:root:[4] train-auc=0.8097, valid-auc=0.7517 [2.5 s]
+WARNING:root:[5] train-auc=0.8142, valid-auc=0.7498 [2.5 s]
+WARNING:root:[6] train-auc=0.8179, valid-auc=0.7482 [2.5 s]
+WARNING:root:[7] train-auc=0.8214, valid-auc=0.7463 [2.6 s]
+WARNING:root:训练集logloss: 0.42279228
+WARNING:root:训练集auc: 0.80388840
+WARNING:root:验证集logloss: 0.45955683
+WARNING:root:验证集auc: 0.75313241
+WARNING:root:测试集logloss: 0.47070452
+WARNING:root:测试集auc: 0.75175993
+WARNING:root:embedding_size: 4
+WARNING:root:dropout_fm:[0.5, 0.3]
+WARNING:root:#params: 35546
+WARNING:root:[1] train-auc=0.7564, valid-auc=0.7254 [2.9 s]
+WARNING:root:[2] train-auc=0.7898, valid-auc=0.7509 [2.5 s]
+WARNING:root:[3] train-auc=0.7998, valid-auc=0.7534 [2.5 s]
+WARNING:root:[4] train-auc=0.8061, valid-auc=0.7532 [2.4 s]
+WARNING:root:[5] train-auc=0.8107, valid-auc=0.7523 [2.5 s]
+WARNING:root:[6] train-auc=0.8143, valid-auc=0.7513 [2.5 s]
+WARNING:root:[7] train-auc=0.8176, valid-auc=0.7501 [2.4 s]
+WARNING:root:训练集logloss: 0.42651931
+WARNING:root:训练集auc: 0.79982774
+WARNING:root:验证集logloss: 0.45883678
+WARNING:root:验证集auc: 0.75340182
+WARNING:root:测试集logloss: 0.46973435
+WARNING:root:测试集auc: 0.75225526
+WARNING:root:embedding_size: 4
+WARNING:root:dropout_fm:[0.5, 0.5]
+WARNING:root:#params: 35546
+WARNING:root:[1] train-auc=0.7691, valid-auc=0.7367 [2.9 s]
+WARNING:root:[2] train-auc=0.7944, valid-auc=0.7519 [2.4 s]
+WARNING:root:[3] train-auc=0.8039, valid-auc=0.7527 [2.4 s]
+WARNING:root:[4] train-auc=0.8101, valid-auc=0.7515 [2.4 s]
+WARNING:root:[5] train-auc=0.8148, valid-auc=0.7496 [2.4 s]
+WARNING:root:[6] train-auc=0.8186, valid-auc=0.7479 [2.4 s]
+WARNING:root:[7] train-auc=0.8223, valid-auc=0.7459 [2.5 s]
+WARNING:root:训练集logloss: 0.42282679
+WARNING:root:训练集auc: 0.80393218
+WARNING:root:验证集logloss: 0.45961353
+WARNING:root:验证集auc: 0.75269885
+WARNING:root:测试集logloss: 0.47063419
+WARNING:root:测试集auc: 0.75146729
+WARNING:root:embedding_size: 8
+WARNING:root:dropout_fm:[0.3, 0.3]
+WARNING:root:#params: 69850
+WARNING:root:[1] train-auc=0.7535, valid-auc=0.7277 [3.4 s]
+WARNING:root:[2] train-auc=0.7913, valid-auc=0.7509 [2.9 s]
+WARNING:root:[3] train-auc=0.8031, valid-auc=0.7522 [3.0 s]
+WARNING:root:[4] train-auc=0.8105, valid-auc=0.7510 [3.0 s]
+WARNING:root:[5] train-auc=0.8159, valid-auc=0.7488 [3.1 s]
+WARNING:root:[6] train-auc=0.8205, valid-auc=0.7471 [3.0 s]
+WARNING:root:[7] train-auc=0.8248, valid-auc=0.7456 [3.0 s]
+WARNING:root:训练集logloss: 0.42323841
+WARNING:root:训练集auc: 0.80313127
+WARNING:root:验证集logloss: 0.46262097
+WARNING:root:验证集auc: 0.75223538
+WARNING:root:测试集logloss: 0.47442377
+WARNING:root:测试集auc: 0.74989602
+WARNING:root:embedding_size: 8
+WARNING:root:dropout_fm:[0.3, 0.5]
+WARNING:root:#params: 69850
+WARNING:root:[1] train-auc=0.7674, valid-auc=0.7382 [3.4 s]
+WARNING:root:[2] train-auc=0.7966, valid-auc=0.7517 [2.9 s]
+WARNING:root:[3] train-auc=0.8078, valid-auc=0.7510 [2.9 s]
+WARNING:root:[4] train-auc=0.8149, valid-auc=0.7486 [2.9 s]
+WARNING:root:[5] train-auc=0.8206, valid-auc=0.7457 [3.0 s]
+WARNING:root:[6] train-auc=0.8259, valid-auc=0.7437 [2.9 s]
+WARNING:root:训练集logloss: 0.42973506
+WARNING:root:训练集auc: 0.79662940
+WARNING:root:验证集logloss: 0.46520965
+WARNING:root:验证集auc: 0.75171350
+WARNING:root:测试集logloss: 0.47689177
+WARNING:root:测试集auc: 0.74982522
+WARNING:root:embedding_size: 8
+WARNING:root:dropout_fm:[0.5, 0.3]
+WARNING:root:#params: 69850
+WARNING:root:[1] train-auc=0.7532, valid-auc=0.7267 [3.4 s]
+WARNING:root:[2] train-auc=0.7912, valid-auc=0.7498 [3.0 s]
+WARNING:root:[3] train-auc=0.8039, valid-auc=0.7516 [3.0 s]
+WARNING:root:[4] train-auc=0.8117, valid-auc=0.7508 [3.0 s]
+WARNING:root:[5] train-auc=0.8176, valid-auc=0.7488 [3.1 s]
+WARNING:root:[6] train-auc=0.8224, valid-auc=0.7470 [3.0 s]
+WARNING:root:[7] train-auc=0.8268, valid-auc=0.7453 [3.0 s]
+WARNING:root:训练集logloss: 0.42261337
+WARNING:root:训练集auc: 0.80388629
+WARNING:root:验证集logloss: 0.46171970
+WARNING:root:验证集auc: 0.75162052
+WARNING:root:测试集logloss: 0.47346122
+WARNING:root:测试集auc: 0.74927963
+WARNING:root:embedding_size: 8
+WARNING:root:dropout_fm:[0.5, 0.5]
+WARNING:root:#params: 69850
+WARNING:root:[1] train-auc=0.7670, valid-auc=0.7369 [3.4 s]
+WARNING:root:[2] train-auc=0.7969, valid-auc=0.7508 [2.9 s]
+WARNING:root:[3] train-auc=0.8089, valid-auc=0.7506 [3.0 s]
+WARNING:root:[4] train-auc=0.8165, valid-auc=0.7485 [2.9 s]
+WARNING:root:[5] train-auc=0.8226, valid-auc=0.7457 [2.9 s]
+WARNING:root:[6] train-auc=0.8282, valid-auc=0.7434 [2.9 s]
+WARNING:root:训练集logloss: 0.42859661
+WARNING:root:训练集auc: 0.79687576
+WARNING:root:验证集logloss: 0.46305176
+WARNING:root:验证集auc: 0.75083306
+WARNING:root:测试集logloss: 0.47451509
+WARNING:root:测试集auc: 0.74920304
+WARNING:root:best embedding_size: 4
+WARNING:root:best dropout_fm:[0.3, 0.3]
+WARNING:root:调参结束！
+WARNING:root:{'use_ffm': True, 'use_deep': False, 'use_attention': False, 'attention_size': 10, 'embedding_size': 4, 'dropout_fm': [0.3, 0.3], 'deep_layers': [16, 16], 'dropout_deep': [0.5, 0.5, 0.5], 'deep_layers_activation': <function relu at 0x2b35000caae8>, 'epoch': 9999999, 'batch_size': 256, 'learning_rate': 0.001, 'optimizer_type': 'adam', 'batch_norm': 1, 'batch_norm_decay': 0.995, 'l2_reg': 0.01, 'verbose': True, 'random_seed': 2019, 'feature_size': 944, 'field_size': 8}
+WARNING:root:#params: 35546
+WARNING:root:[1] train-auc=0.7578, valid-auc=0.7279 [2.9 s]
+WARNING:root:[2] train-auc=0.7905, valid-auc=0.7523 [2.4 s]
+WARNING:root:[3] train-auc=0.7999, valid-auc=0.7540 [2.4 s]
+WARNING:root:[4] train-auc=0.8059, valid-auc=0.7534 [2.4 s]
+WARNING:root:[5] train-auc=0.8102, valid-auc=0.7523 [2.4 s]
+WARNING:root:[6] train-auc=0.8136, valid-auc=0.7511 [2.4 s]
+WARNING:root:[7] train-auc=0.8167, valid-auc=0.7500 [2.4 s]
+WARNING:root:训练集logloss: 0.42642580
+WARNING:root:训练集auc: 0.79994734
+WARNING:root:验证集logloss: 0.45868904
+WARNING:root:验证集auc: 0.75402729
+WARNING:root:测试集logloss: 0.46967970
+WARNING:root:测试集auc: 0.75279627
+Time used: 186.555917263031

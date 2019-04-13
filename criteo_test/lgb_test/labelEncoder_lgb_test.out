@@ -1,0 +1,19 @@
+[LightGBM] [Warning] Starting from the 2.1.2 version, default value for the "boost_from_average" parameter in "binary" objective is true.
+This may cause significantly different results comparing to the previous versions of LightGBM.
+Try to set boost_from_average=false, if your old models produce bad results
+[LightGBM] [Info] Number of positive: 13487, number of negative: 46513
+[LightGBM] [Info] Total Bins 1855
+[LightGBM] [Info] Number of data: 60000, number of used features: 39
+[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.224783 -> initscore=-1.238006
+[LightGBM] [Info] Start training from score -1.238006
+Training until validation scores don't improve for 10 rounds.
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+Early stopping, best iteration is:
+[8]	training's binary_logloss: 0.420223	valid_1's binary_logloss: 0.470144
+WARNING:root:训练集logloss: 0.42022265
+WARNING:root:训练集auc: 0.80979581
+WARNING:root:验证集logloss: 0.47014418
+WARNING:root:验证集auc: 0.73320439
+WARNING:root:测试集logloss: 0.47466739
+WARNING:root:测试集auc: 0.74457999
+WARNING:root:early stop: 8

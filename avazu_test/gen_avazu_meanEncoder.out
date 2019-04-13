@@ -1,0 +1,128 @@
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+gen_avazu_meanEncoder.py:59: FutureWarning: using a dict on a Series for aggregation
+is deprecated and will be removed in a future version
+  col_avg_y = X_train.groupby(by=variable, axis=0)['pred_temp'].agg({'mean': 'mean', 'beta': 'size'})
+(100000, 43)
+Time used: 14.170952081680298

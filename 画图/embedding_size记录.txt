@@ -1,0 +1,72 @@
+criteo数据集
+python affm_lgbEncoder_tuning.py --use_cross_entropy True --use_pos_ratio True
+--attention_size_list [4] --embedding_size_list [2,4,6,8,10] --dropout_fm_0_list [0.5] --dropout_fm_1_list [0.3]
+
+embedding_size=2
+WARNING:root:训练集logloss: 0.42937957
+WARNING:root:训练集auc: 0.79835946
+WARNING:root:验证集logloss: 0.45535123
+WARNING:root:验证集auc: 0.75514347
+WARNING:root:测试集logloss: 0.46632615
+WARNING:root:测试集auc: 0.75521102
+
+embedding_size=4
+WARNING:root:训练集logloss: 0.43211987
+WARNING:root:训练集auc: 0.79546638
+WARNING:root:验证集logloss: 0.45540019
+WARNING:root:验证集auc: 0.75524436
+WARNING:root:测试集logloss: 0.46586333
+WARNING:root:测试集auc: 0.75614338
+
+embedding_size=6
+WARNING:root:训练集logloss: 0.42668902
+WARNING:root:训练集auc: 0.80457783
+WARNING:root:验证集logloss: 0.46134601
+WARNING:root:验证集auc: 0.74888143
+WARNING:root:测试集logloss: 0.47230573
+WARNING:root:测试集auc: 0.74894022
+
+embedding_size=8
+WARNING:root:训练集logloss: 0.44878684
+WARNING:root:训练集auc: 0.79696541
+WARNING:root:验证集logloss: 0.47085498
+WARNING:root:验证集auc: 0.75106111
+WARNING:root:测试集logloss: 0.47971707
+WARNING:root:测试集auc: 0.75247951
+
+##########################################################################
+avazu数据集
+python affm_lgbEncoder_tuning.py --use_cross_entropy True --use_pos_ratio True
+--attention_size_list [2] --embedding_size_list [2,4,6,8,10] --dropout_fm_0_list [0.6] --dropout_fm_1_list [0.3]
+
+embedding_size=2
+WARNING:root:训练集logloss: 0.38408818
+WARNING:root:训练集auc: 0.78750804
+WARNING:root:验证集logloss: 0.39811737
+WARNING:root:验证集auc: 0.76102929
+WARNING:root:测试集logloss: 0.39806155
+WARNING:root:测试集auc: 0.76528282
+
+embedding_size=4
+WARNING:root:训练集logloss: 0.39540328
+WARNING:root:训练集auc: 0.78680541
+WARNING:root:验证集logloss: 0.40569874
+WARNING:root:验证集auc: 0.76030371
+WARNING:root:测试集logloss: 0.40538578
+WARNING:root:测试集auc: 0.76601039
+
+embedding_size=6
+WARNING:root:训练集logloss: 0.39412280
+WARNING:root:训练集auc: 0.78585098
+WARNING:root:验证集logloss: 0.40447069
+WARNING:root:验证集auc: 0.76047358
+WARNING:root:测试集logloss: 0.40406571
+WARNING:root:测试集auc: 0.76632607
+
+embedding_size=8
+WARNING:root:训练集logloss: 0.39941174
+WARNING:root:训练集auc: 0.78012320
+WARNING:root:验证集logloss: 0.40722921
+WARNING:root:验证集auc: 0.75930814
+WARNING:root:测试集logloss: 0.40678924
+WARNING:root:测试集auc: 0.76505791

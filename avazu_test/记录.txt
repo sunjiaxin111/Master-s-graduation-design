@@ -1,0 +1,260 @@
+hour 的取值有 1 个
+C1 的取值有 6 个
+banner_pos 的取值有 5 个
+site_id 的取值有 893 个
+site_domain 的取值有 780 个
+site_category 的取值有 16 个
+app_id 的取值有 704 个
+app_domain 的取值有 55 个
+app_category 的取值有 19 个
+device_id 的取值有 7202 个
+device_ip 的取值有 40376 个
+device_model 的取值有 2473 个
+device_type 的取值有 4 个
+device_conn_type 的取值有 4 个
+C14 的取值有 420 个
+C15 的取值有 5 个
+C16 的取值有 6 个
+C17 的取值有 128 个
+C18 的取值有 4 个
+C19 的取值有 37 个
+C20 的取值有 137 个
+C21 的取值有 29 个
+one-hot处理后的特征数为: 53304
+##############################################################################
+
+1、对比labelEncoder和meanEncoder编码后数据集在lgb上的效果
+2、使用lgb编码后，在FFM中对比①不使用交叉熵特征和正例率特征②使用交叉熵特征③使用正例率特征④使用交叉熵特征和正例率特征这4种情况的效果
+3、使用交叉熵特征和正例率特征，使用AFFM
+
+##############################################################################
+1、对比labelEncoder和meanEncoder编码后数据集在lgb上的效果
+1.1、使用gen_avazu_labelEncoder.py生成avazu_labelEncoder.csv
+1.2、使用lgb_tuning中的labelEncoder_lgb_tuning.py调参
+1.3、使用lgb_test中的labelEncoder_lgb_test.py得到labelEncoder在lgb上的效果
+1.4、使用gen_avazu_meanEncoder.py生成avazu_meanEncoder.csv
+1.5、使用lgb_tuning中的meanEncoder_lgb_tuning.py调参
+1.6、使用lgb_test中的meanEncoder_lgb_test.py得到meanEncoder在lgb上的效果
+
+##############################################################################
+2、使用lgb编码后，在FFM中对比①不使用交叉熵特征和正例率特征②使用交叉熵特征③使用正例率特征④使用交叉熵特征和正例率特征这4种情况的效果
+2.1、使用gen_avazu_lgbEncoder.py生成avazu_lgbEncoder.csv
+2.2、在ffm_tuning中分别对上述四种情况进行调参
+①不使用交叉熵特征和正例率特征（输出保存在ffm_lgbEncoder_tuning1.out）
+python ffm_lgbEncoder_tuning.py --use_cross_entropy False --use_pos_ratio False
+--embedding_size_list [2,4,8] --dropout_fm_0_list [0.8,0.9] --dropout_fm_1_list [0.4,0.5]
+最优参数
+'embedding_size': 4, 'dropout_fm': [0.8, 0.4]
+最优效果
+WARNING:root:训练集logloss: 0.37986961
+WARNING:root:训练集auc: 0.79190536
+WARNING:root:验证集logloss: 0.40056598
+WARNING:root:验证集auc: 0.75672694
+WARNING:root:测试集logloss: 0.39948298
+WARNING:root:测试集auc: 0.76166069
+Time used: 290.80314898490906
+
+②使用交叉熵特征（输出保存在ffm_lgbEncoder_tuning2.out）
+python ffm_lgbEncoder_tuning.py --use_cross_entropy True --use_pos_ratio False
+--embedding_size_list [2,4] --dropout_fm_0_list [0.8,0.9] --dropout_fm_1_list [0.5,0.6]
+最优参数
+'embedding_size': 4, 'dropout_fm': [0.8, 0.5]
+最优效果
+WARNING:root:训练集logloss: 0.38097654
+WARNING:root:训练集auc: 0.79019262
+WARNING:root:验证集logloss: 0.39938870
+WARNING:root:验证集auc: 0.75908044
+WARNING:root:测试集logloss: 0.39859489
+WARNING:root:测试集auc: 0.76378009
+Time used: 443.51724648475647
+
+③使用正例率特征（输出保存在ffm_lgbEncoder_tuning3.out）
+python ffm_lgbEncoder_tuning.py --use_cross_entropy False --use_pos_ratio True
+--embedding_size_list [2,4] --dropout_fm_0_list [0.8,0.9] --dropout_fm_1_list [0.6,0.7]
+最优参数
+'embedding_size': 4, 'dropout_fm': [0.8, 0.6]
+最优效果
+WARNING:root:训练集logloss: 0.38065501
+WARNING:root:训练集auc: 0.79033868
+WARNING:root:验证集logloss: 0.39943683
+WARNING:root:验证集auc: 0.75911297
+WARNING:root:测试集logloss: 0.39834124
+WARNING:root:测试集auc: 0.76429977
+Time used: 442.49920439720154
+
+④使用交叉熵特征和正例率特征（输出保存在ffm_lgbEncoder_tuning4.out）
+python ffm_lgbEncoder_tuning.py --use_cross_entropy True --use_pos_ratio True
+--embedding_size_list [2,4] --dropout_fm_0_list [0.6,0.7] --dropout_fm_1_list [0.4,0.5]
+最优参数
+'embedding_size': 2, 'dropout_fm': [0.7, 0.4]
+最优效果
+WARNING:root:训练集logloss: 0.38186083
+WARNING:root:训练集auc: 0.78856467
+WARNING:root:验证集logloss: 0.39882114
+WARNING:root:验证集auc: 0.75972998
+WARNING:root:测试集logloss: 0.39823139
+WARNING:root:测试集auc: 0.76484266
+Time used: 1914.3333733081818
+
+2.3、在ffm_test中分别得到上述四种情况的效果
+通过传入参数来区分四种情况
+①不使用交叉熵特征和正例率特征
+命令
+python ffm_lgbEncoder_test.py --use_cross_entropy False --use_pos_ratio False
+--embedding_size 4 --dropout_fm [0.8,0.4]
+输出
+WARNING:root:#params: 25514
+WARNING:root:[1] train-auc=0.7627, valid-auc=0.7393 [3.4 s]
+WARNING:root:[2] train-auc=0.7848, valid-auc=0.7554 [2.6 s]
+WARNING:root:[3] train-auc=0.7919, valid-auc=0.7567 [2.7 s]
+WARNING:root:[4] train-auc=0.7967, valid-auc=0.7554 [2.7 s]
+WARNING:root:[5] train-auc=0.7999, valid-auc=0.7549 [2.8 s]
+WARNING:root:[6] train-auc=0.8026, valid-auc=0.7539 [2.6 s]
+WARNING:root:[7] train-auc=0.8043, valid-auc=0.7534 [2.8 s]
+WARNING:root:训练集logloss: 0.37986961
+WARNING:root:训练集auc: 0.79190536
+WARNING:root:验证集logloss: 0.40056598
+WARNING:root:验证集auc: 0.75672694
+WARNING:root:测试集logloss: 0.39948298
+WARNING:root:测试集auc: 0.76166069
+Time used: 26.663243293762207
+
+②使用交叉熵特征
+命令
+python ffm_lgbEncoder_test.py --use_cross_entropy True --use_pos_ratio False
+--embedding_size 4 --dropout_fm [0.8,0.5]
+输出
+WARNING:root:#params: 58810
+WARNING:root:[1] train-auc=0.7767, valid-auc=0.7572 [10.0 s]
+WARNING:root:[2] train-auc=0.7902, valid-auc=0.7591 [8.1 s]
+WARNING:root:[3] train-auc=0.7976, valid-auc=0.7568 [8.1 s]
+WARNING:root:[4] train-auc=0.8029, valid-auc=0.7531 [8.1 s]
+WARNING:root:[5] train-auc=0.8060, valid-auc=0.7526 [8.2 s]
+WARNING:root:[6] train-auc=0.8086, valid-auc=0.7499 [8.1 s]
+WARNING:root:训练集logloss: 0.38097654
+WARNING:root:训练集auc: 0.79019262
+WARNING:root:验证集logloss: 0.39938870
+WARNING:root:验证集auc: 0.75908044
+WARNING:root:测试集logloss: 0.39859489
+WARNING:root:测试集auc: 0.76378009
+Time used: 58.57615828514099
+
+③使用正例率特征
+命令
+python ffm_lgbEncoder_test.py --use_cross_entropy False --use_pos_ratio True
+--embedding_size 4 --dropout_fm [0.8,0.6]
+输出
+WARNING:root:#params: 58810
+WARNING:root:[1] train-auc=0.7774, valid-auc=0.7565 [10.0 s]
+WARNING:root:[2] train-auc=0.7903, valid-auc=0.7591 [8.1 s]
+WARNING:root:[3] train-auc=0.7975, valid-auc=0.7572 [7.8 s]
+WARNING:root:[4] train-auc=0.8028, valid-auc=0.7538 [7.8 s]
+WARNING:root:[5] train-auc=0.8060, valid-auc=0.7531 [7.9 s]
+WARNING:root:[6] train-auc=0.8089, valid-auc=0.7502 [8.1 s]
+WARNING:root:训练集logloss: 0.38065501
+WARNING:root:训练集auc: 0.79033868
+WARNING:root:验证集logloss: 0.39943683
+WARNING:root:验证集auc: 0.75911297
+WARNING:root:测试集logloss: 0.39834124
+WARNING:root:测试集auc: 0.76429977
+Time used: 57.521543741226196
+
+④使用交叉熵特征和正例率特征
+命令
+python ffm_lgbEncoder_test.py --use_cross_entropy True --use_pos_ratio True
+--embedding_size 2 --dropout_fm [0.7,0.4]
+输出
+WARNING:root:#params: 50890
+WARNING:root:[1] train-auc=0.7747, valid-auc=0.7573 [21.9 s]
+WARNING:root:[2] train-auc=0.7886, valid-auc=0.7597 [15.6 s]
+WARNING:root:[3] train-auc=0.7955, valid-auc=0.7576 [16.0 s]
+WARNING:root:[4] train-auc=0.8007, valid-auc=0.7546 [15.6 s]
+WARNING:root:[5] train-auc=0.8035, valid-auc=0.7538 [15.7 s]
+WARNING:root:[6] train-auc=0.8061, valid-auc=0.7517 [16.1 s]
+WARNING:root:训练集logloss: 0.38186083
+WARNING:root:训练集auc: 0.78856467
+WARNING:root:验证集logloss: 0.39882114
+WARNING:root:验证集auc: 0.75972998
+WARNING:root:测试集logloss: 0.39823139
+WARNING:root:测试集auc: 0.76484266
+Time used: 112.69726324081421
+
+##############################################################################
+3、使用交叉熵特征和正例率特征，使用AFFM
+3.1、在affm_tuning中进行调参
+python affm_lgbEncoder_tuning.py --use_cross_entropy True --use_pos_ratio True
+--attention_size_list [2,4] --embedding_size_list [2,4] --dropout_fm_0_list [0.6] --dropout_fm_1_list [0.3]
+最优参数
+'attention_size': 2, 'embedding_size': 2, 'dropout_fm': [0.6, 0.3]
+最优效果
+WARNING:root:训练集logloss: 0.38408818
+WARNING:root:训练集auc: 0.78750804
+WARNING:root:验证集logloss: 0.39811737
+WARNING:root:验证集auc: 0.76102929
+WARNING:root:测试集logloss: 0.39806155
+WARNING:root:测试集auc: 0.76528282
+Time used: 3051.5370965003967
+
+3.2、在affm_test中得到效果
+命令
+python affm_lgbEncoder_test.py --use_cross_entropy True --use_pos_ratio True
+--attention_size 2 --embedding_size 2 --dropout_fm [0.6,0.3]
+输出
+WARNING:root:#params: 50900
+WARNING:root:[1] train-auc=0.5988, valid-auc=0.6084 [30.2 s]
+WARNING:root:[2] train-auc=0.7253, valid-auc=0.7143 [29.4 s]
+WARNING:root:[3] train-auc=0.7553, valid-auc=0.7405 [18.6 s]
+WARNING:root:[4] train-auc=0.7646, valid-auc=0.7482 [18.6 s]
+WARNING:root:[5] train-auc=0.7694, valid-auc=0.7524 [18.6 s]
+WARNING:root:[6] train-auc=0.7723, valid-auc=0.7547 [19.2 s]
+WARNING:root:[7] train-auc=0.7743, valid-auc=0.7563 [22.0 s]
+WARNING:root:[8] train-auc=0.7762, valid-auc=0.7576 [25.7 s]
+WARNING:root:[9] train-auc=0.7776, valid-auc=0.7583 [24.3 s]
+WARNING:root:[10] train-auc=0.7790, valid-auc=0.7592 [28.4 s]
+WARNING:root:[11] train-auc=0.7802, valid-auc=0.7598 [19.3 s]
+WARNING:root:[12] train-auc=0.7811, valid-auc=0.7602 [18.6 s]
+WARNING:root:[13] train-auc=0.7821, valid-auc=0.7604 [18.6 s]
+WARNING:root:[14] train-auc=0.7830, valid-auc=0.7606 [18.6 s]
+WARNING:root:[15] train-auc=0.7837, valid-auc=0.7608 [21.5 s]
+WARNING:root:[16] train-auc=0.7843, valid-auc=0.7608 [25.1 s]
+WARNING:root:[17] train-auc=0.7850, valid-auc=0.7609 [25.7 s]
+WARNING:root:[18] train-auc=0.7856, valid-auc=0.7609 [22.7 s]
+WARNING:root:[19] train-auc=0.7862, valid-auc=0.7610 [26.1 s]
+WARNING:root:[20] train-auc=0.7867, valid-auc=0.7609 [18.7 s]
+WARNING:root:[21] train-auc=0.7871, valid-auc=0.7609 [18.7 s]
+WARNING:root:[22] train-auc=0.7875, valid-auc=0.7610 [18.6 s]
+WARNING:root:[23] train-auc=0.7882, valid-auc=0.7610 [20.5 s]
+WARNING:root:[24] train-auc=0.7887, valid-auc=0.7610 [26.4 s]
+WARNING:root:[25] train-auc=0.7890, valid-auc=0.7609 [26.2 s]
+WARNING:root:[26] train-auc=0.7892, valid-auc=0.7609 [25.1 s]
+WARNING:root:训练集logloss: 0.38408818
+WARNING:root:训练集auc: 0.78750804
+WARNING:root:验证集logloss: 0.39811737
+WARNING:root:验证集auc: 0.76102929
+WARNING:root:测试集logloss: 0.39806155
+WARNING:root:测试集auc: 0.76528282
+Time used: 602.2234690189362
+
+##############################################################################
+使用xlearn在原始数据集上做一些对比实验，用于证明上面2个创新点的有效性
+①LR
+训练集logloss: 0.2875849545718531
+训练集auc: 0.9210725046574381
+验证集logloss: 0.39983434992471073
+验证集auc: 0.7597746020926216
+测试集logloss: 0.3998433691582353
+测试集auc: 0.7623872809151959
+②FM
+训练集logloss: 0.3008933943445529
+训练集auc: 0.9206994043917311
+验证集logloss: 0.3985427340094719
+验证集auc: 0.759934835928251
+测试集logloss: 0.3983170947612415
+测试集auc: 0.7639743999912958
+③FFM
+训练集logloss: 0.2442257147369555
+训练集auc: 0.9573537961711145
+验证集logloss: 0.39938520228170404
+验证集auc: 0.7628305583628121
+测试集logloss: 0.4006116203091371
+测试集auc: 0.7644233964022856

@@ -1,0 +1,72 @@
+criteo数据集
+python affm_lgbEncoder_tuning.py --use_cross_entropy True --use_pos_ratio True
+--attention_size_list [2,4,6,8] --embedding_size_list [4] --dropout_fm_0_list [0.5] --dropout_fm_1_list [0.3]
+
+attention_size=2
+WARNING:root:训练集logloss: 0.43376918
+WARNING:root:训练集auc: 0.79811893
+WARNING:root:验证集logloss: 0.45977494
+WARNING:root:验证集auc: 0.75458721
+WARNING:root:测试集logloss: 0.46963417
+WARNING:root:测试集auc: 0.75490938
+
+attention_size=4
+WARNING:root:训练集logloss: 0.43211987
+WARNING:root:训练集auc: 0.79546638
+WARNING:root:验证集logloss: 0.45540019
+WARNING:root:验证集auc: 0.75524436
+WARNING:root:测试集logloss: 0.46586333
+WARNING:root:测试集auc: 0.75614338
+
+attention_size=6
+WARNING:root:训练集logloss: 0.44987084
+WARNING:root:训练集auc: 0.80883704
+WARNING:root:验证集logloss: 0.48211361
+WARNING:root:验证集auc: 0.75137605
+WARNING:root:测试集logloss: 0.49111222
+WARNING:root:测试集auc: 0.75204842
+
+attention_size=8
+WARNING:root:训练集logloss: 0.45414122
+WARNING:root:训练集auc: 0.79751076
+WARNING:root:验证集logloss: 0.47189017
+WARNING:root:验证集auc: 0.75012693
+WARNING:root:测试集logloss: 0.48238528
+WARNING:root:测试集auc: 0.75120420
+
+##########################################################################
+avazu数据集
+python affm_lgbEncoder_tuning.py --use_cross_entropy True --use_pos_ratio True
+--attention_size_list [2,4,6,8] --embedding_size_list [2] --dropout_fm_0_list [0.6] --dropout_fm_1_list [0.3]
+
+attention_size=2
+WARNING:root:训练集logloss: 0.38408818
+WARNING:root:训练集auc: 0.78750804
+WARNING:root:验证集logloss: 0.39811737
+WARNING:root:验证集auc: 0.76102929
+WARNING:root:测试集logloss: 0.39806155
+WARNING:root:测试集auc: 0.76528282
+
+attention_size=4
+WARNING:root:训练集logloss: 0.38309755
+WARNING:root:训练集auc: 0.78917106
+WARNING:root:验证集logloss: 0.39856123
+WARNING:root:验证集auc: 0.76092397
+WARNING:root:测试集logloss: 0.39849626
+WARNING:root:测试集auc: 0.76487490
+
+attention_size=6
+WARNING:root:训练集logloss: 0.43319831
+WARNING:root:训练集auc: 0.78855027
+WARNING:root:验证集logloss: 0.44064009
+WARNING:root:验证集auc: 0.75640016
+WARNING:root:测试集logloss: 0.44128154
+WARNING:root:测试集auc: 0.75984649
+
+attention_size=8
+WARNING:root:训练集logloss: 0.42799622
+WARNING:root:训练集auc: 0.78405662
+WARNING:root:验证集logloss: 0.43589545
+WARNING:root:验证集auc: 0.75808114
+WARNING:root:测试集logloss: 0.43623803
+WARNING:root:测试集auc: 0.76213670

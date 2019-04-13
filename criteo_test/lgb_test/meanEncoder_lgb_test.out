@@ -1,0 +1,33 @@
+[LightGBM] [Warning] Starting from the 2.1.2 version, default value for the "boost_from_average" parameter in "binary" objective is true.
+This may cause significantly different results comparing to the previous versions of LightGBM.
+Try to set boost_from_average=false, if your old models produce bad results
+[LightGBM] [Info] Number of positive: 13487, number of negative: 46513
+[LightGBM] [Info] Total Bins 325
+[LightGBM] [Info] Number of data: 60000, number of used features: 65
+[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.224783 -> initscore=-1.238006
+[LightGBM] [Info] Start training from score -1.238006
+Training until validation scores don't improve for 10 rounds.
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] Stopped training because there are no more leaves that meet the split requirements
+Early stopping, best iteration is:
+[8]	training's binary_logloss: 0.422335	valid_1's binary_logloss: 0.457654
+WARNING:root:训练集logloss: 0.42233476
+WARNING:root:训练集auc: 0.80436998
+WARNING:root:验证集logloss: 0.45765432
+WARNING:root:验证集auc: 0.75290475
+WARNING:root:测试集logloss: 0.47029396
+WARNING:root:测试集auc: 0.75052228
+WARNING:root:early stop: 8

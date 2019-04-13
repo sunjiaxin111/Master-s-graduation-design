@@ -1,0 +1,29 @@
+[LightGBM] [Warning] Starting from the 2.1.2 version, default value for the "boost_from_average" parameter in "binary" objective is true.
+This may cause significantly different results comparing to the previous versions of LightGBM.
+Try to set boost_from_average=false, if your old models produce bad results
+[LightGBM] [Info] Number of positive: 10470, number of negative: 49530
+[LightGBM] [Info] Total Bins 100
+[LightGBM] [Info] Number of data: 60000, number of used features: 21
+[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.174500 -> initscore=-1.554065
+[LightGBM] [Info] Start training from score -1.554065
+Training until validation scores don't improve for 10 rounds.
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+[LightGBM] [Warning] No further splits with positive gain, best gain: -inf
+Early stopping, best iteration is:
+[10]	training's binary_logloss: 0.40413	valid_1's binary_logloss: 0.414513
+WARNING:root:训练集logloss: 0.40412979
+WARNING:root:训练集auc: 0.74446438
+WARNING:root:验证集logloss: 0.41451324
+WARNING:root:验证集auc: 0.72086545
+WARNING:root:测试集logloss: 0.41509264
+WARNING:root:测试集auc: 0.72429687
+WARNING:root:early stop: 10

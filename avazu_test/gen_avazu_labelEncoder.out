@@ -1,0 +1,27 @@
+(100000, 24)
+id 的取值有 100000 个
+Label 的取值有 2 个
+hour 的取值有 1 个
+C1 的取值有 6 个
+banner_pos 的取值有 5 个
+site_id 的取值有 893 个
+site_domain 的取值有 780 个
+site_category 的取值有 16 个
+app_id 的取值有 704 个
+app_domain 的取值有 55 个
+app_category 的取值有 19 个
+device_id 的取值有 7202 个
+device_ip 的取值有 40376 个
+device_model 的取值有 2473 个
+device_type 的取值有 4 个
+device_conn_type 的取值有 4 个
+C14 的取值有 420 个
+C15 的取值有 5 个
+C16 的取值有 6 个
+C17 的取值有 128 个
+C18 的取值有 4 个
+C19 的取值有 37 个
+C20 的取值有 137 个
+C21 的取值有 29 个
+(100000, 24)
+Time used: 4.267768859863281
